@@ -7,6 +7,10 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## Unreleased
 
+### Added
+
+- Add Docker Image publisher ([#2](https://github.com/claudiodekker/changelog-updater/pull/2))
+
 ### Fixed
 
 - Fix crash when there are no parseable releases ([#1](https://github.com/claudiodekker/changelog-updater/pull/1))
