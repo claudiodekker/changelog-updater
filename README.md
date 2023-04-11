@@ -6,7 +6,7 @@ A PHP library to programmatically update changelogs based on the "Keep a Changel
 
 ### GitHub Action
 
-This library can be used as a GitHub Action to automatically update your changelog when a pull request is merged. To set up the GitHub Action, follow the steps below:
+This library can be used as a GitHub Action to automatically update your changelog when a pull request is merged. You can [see an example of what this looks like here](https://github.com/claudiodekker/changelog-updater-example). To set up the GitHub Action, follow the steps below:
 
 1. Create a new file in your repository at `.github/workflows/update_changelog.yml`
 
