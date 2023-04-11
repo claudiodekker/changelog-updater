@@ -1,5 +1,5 @@
-name: 'Changelog Updater'
-description: 'Add an entry to a changelog file'
+name: 'Add Changelog Entry'
+description: 'Auto-format & add entries to your Changelog file'
 
 author: Claudio Dekker <claudio@ubient.net>
 
