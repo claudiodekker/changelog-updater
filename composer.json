@@ -1,0 +1,44 @@
+{
+    "name": "claudiodekker/changelog-updater",
+    "description": "A PHP package to programmatically update your changelog file.",
+    "keywords": [
+        "php",
+        "changelog",
+        "updater",
+        "manager",
+        "modify"
+    ],
+    "homepage": "https://github.com/claudiodekker/changelog-updater",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Claudio Dekker",
+            "email": "claudio@ubient.net",
+            "homepage": "https://ubient.net",
+            "role": "Developer"
+        }
+    ],
+    "require": {
+        "php": "~8.2.0",
+        "illuminate/support": "^10.6",
+        "phar-io/version": "^3.2"
+    },
+    "require-dev": {
+        "phpunit/phpunit": "^8.4|^9.5.8"
+    },
+    "autoload": {
+        "psr-4": {
+            "ClaudioDekker\\ChangelogUpdater\\": "src"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "ClaudioDekker\\ChangelogUpdater\\Tests\\": "tests"
+        }
+    },
+    "config": {
+        "sort-packages": true
+    },
+    "minimum-stability": "dev",
+    "prefer-stable": true
+}

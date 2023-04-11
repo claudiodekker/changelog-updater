@@ -1,0 +1,32 @@
+name: 'Changelog Updater'
+description: 'Add an entry to a changelog file'
+
+author: Claudio Dekker <claudio@ubient.net>
+
+inputs:
+  file:
+    required: false
+    default: './CHANGELOG.md'
+    description: 'The changelog file'
+  section:
+    required: true
+    description: 'The changelog section to add the entry to'
+  entry-text:
+    required: true
+    description: 'The entry to add to the changelog section'
+  entry-link:
+    required: false
+    description: 'The link to add to the entry'
+
+branding:
+  icon: 'align-right'
+  color: 'gray-dark'
+
+runs:
+  using: 'docker'
+  image: 'Dockerfile'
+  args:
+    - ${{ inputs.file }}
+    - ${{ inputs.section }}
+    - ${{ inputs.entry-text }}
+    - ${{ inputs.entry-link }}
