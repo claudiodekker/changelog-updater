@@ -14,3 +14,4 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 ### Fixed
 
 - Fix crash when there are no parseable releases ([#1](https://github.com/claudiodekker/changelog-updater/pull/1))
+- Action: Fix bug causing Docker image not to be used ([#4](https://github.com/claudiodekker/changelog-updater/pull/4))
