@@ -24,7 +24,7 @@ branding:
 
 runs:
   using: 'docker'
-  image: 'ghcr.io/claudiodekker/changelog-updater:latest'
+  image: 'docker://ghcr.io/claudiodekker/changelog-updater:latest'
   args:
     - ${{ inputs.file }}
     - ${{ inputs.section }}
