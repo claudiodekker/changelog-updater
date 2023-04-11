@@ -33,4 +33,13 @@ class ChangelogParserTest extends TestCase
             ['inertia.md'],
         ];
     }
+
+    /** @test */
+    public function it_parses_a_changelog_without_any_releases(): void
+    {
+        $this->assertSame(
+            $this->loadFixture('empty-changelog-default-title-default-description-unreleased-header.md'),
+            (string) ChangelogParser::parse($this->loadFixture('empty-changelog-default-title-default-description.md')),
+        );
+    }
 }

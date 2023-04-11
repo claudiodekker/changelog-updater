@@ -50,10 +50,11 @@ class ChangelogParser
 
         $changelog = Changelog::make($title, $description);
 
-        $unreleased = $this->parseRelease();
-        $unreleased && Str::startsWith(Str::lower($unreleased->title), ['unreleased', '[unreleased'])
-            ? $changelog->setUnreleased($unreleased)
-            : $changelog->addRelease($unreleased);
+        if ($unreleased = $this->parseRelease()) {
+            Str::startsWith(Str::lower($unreleased->title), ['unreleased', '[unreleased'])
+                ? $changelog->setUnreleased($unreleased)
+                : $changelog->addRelease($unreleased);
+        }
 
         while ($release = $this->parseRelease()) {
             $changelog->addRelease($release);
