@@ -16,7 +16,7 @@ This library can be used as a GitHub Action to automatically update your changel
    name: Update Changelog on PR Merge
 
    on:
-     pull_request:
+     pull_request_target:
        types:
          - closed
 
