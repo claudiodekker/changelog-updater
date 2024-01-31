@@ -7,6 +7,10 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## Unreleased
 
+### Added
+
+- Add PHP 8.3 Support ([#7](https://github.com/claudiodekker/changelog-updater/pull/7))
+
 ### Fixed
 
 - Workflow: Use `pull_request_target` event to prevent permission issues from forks ([#6](https://github.com/claudiodekker/changelog-updater/pull/6))
