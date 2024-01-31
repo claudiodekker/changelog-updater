@@ -19,7 +19,7 @@
         }
     ],
     "require": {
-        "php": "~8.2.0",
+        "php": "~8.2.0|~8.3.0",
         "illuminate/support": "^10.6",
         "phar-io/version": "^3.2"
     },
