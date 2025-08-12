@@ -7,6 +7,9 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## Unreleased
 
+
+## [v1.2.0](https://github.com/claudiodekker/changelog-updater/compare/v1.1.0...v1.2.0) - 2025-08-12
+
 ### Added
 
 - Add PHP 8.4 Support ([#11](https://github.com/claudiodekker/changelog-updater/pull/11))
