@@ -11,7 +11,7 @@ class Anchor implements Stringable
 
     protected function __construct(
         protected ?string $href,
-        string $label = null,
+        ?string $label = null,
     ) {
         if ($label) {
             $this->label = $label;
@@ -20,7 +20,7 @@ class Anchor implements Stringable
         }
     }
 
-    public static function make(string|null $url = null, string $label = null): self
+    public static function make(?string $url = null, ?string $label = null): self
     {
         return new self($url, $label);
     }

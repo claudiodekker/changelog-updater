@@ -20,7 +20,7 @@ class Changelog implements Stringable
 
     protected Collection $releases;
 
-    protected function __construct(string $title = null, string $description = null)
+    protected function __construct(?string $title = null, ?string $description = null)
     {
         $this->title = $title ?? 'Changelog';
         $this->description = $description ?? "All notable changes to this project will be documented in this file.\n\nThe format is based on ".Anchor::make('https://keepachangelog.com/en/1.0.0/', 'Keep a Changelog').",\nand this project adheres to ".Anchor::make('https://semver.org/spec/v2.0.0.html', 'Semantic Versioning').'.';
@@ -28,7 +28,7 @@ class Changelog implements Stringable
         $this->releases = new Collection();
     }
 
-    public static function make(string $title = null, string $description = null): static
+    public static function make(?string $title = null, ?string $description = null): static
     {
         return new static($title, $description);
     }
