@@ -35,7 +35,16 @@ class Release implements Stringable
 
     public function addSection(Section $section): self
     {
-        $this->sections->put($section->title, $section);
+        // if the section already exists, append the entries to it
+        if ($this->sections->has($section->title)) {
+            $existingSection = $this->sections->get($section->title);
+            $existingSection->appendSection($section);
+
+            return $this;
+        }
+        else {
+            $this->sections->put($section->title, $section);
+        }
 
         return $this;
     }

@@ -151,4 +151,21 @@ class ChangelogTest extends TestCase
             (string) $changelogA
         );
     }
+
+    /** @test */
+    public function it_can_reconcile_duplicate_sections_on_change(): void
+    {
+        $changeLogWithDup = ChangelogParser::parse($this->loadFixture('changelog-with-duplicate-added.md'));
+
+        $changeLogWithDup->unreleased()->section('changed')->addEntry(Entry::make('New change'));
+
+        $expected = $this->loadFixture('changelog-with-duplicate-added-changed.md');
+        $actual = (string) $changeLogWithDup;
+
+        // Normalize line endings for comparison
+        $expected = str_replace(["\r\n", "\r"], "\n", $expected);
+        $actual = str_replace(["\r\n", "\r"], "\n", $actual);
+
+        $this->assertSame($expected, $actual);
+    }
 }

@@ -20,6 +20,13 @@ class Section implements Stringable
         return new static($title);
     }
 
+    public function appendSection(Section $section): self
+    {
+        $this->entries = array_merge($this->entries, $section->entries);
+
+        return $this;
+    }
+
     public function addEntry(Entry|string $title, string|null $url = null): self
     {
         $this->entries[] = $title instanceof Entry
