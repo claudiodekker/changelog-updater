@@ -14,6 +14,9 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 - Add PHP 8.4 Support ([#11](https://github.com/claudiodekker/changelog-updater/pull/11))
 
+### Fixed
+- Fix issue #9: Data loss with duplicate sections  ([#10](https://github.com/claudiodekker/changelog-updater/pull/10))
+
 
 ## [v1.1.0](https://github.com/claudiodekker/changelog-updater/compare/v1.0.0...v1.1.0) - 2024-01-31
 
