@@ -14,7 +14,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 ### Fixed
 
 - Workflow: Use `pull_request_target` event to prevent permission issues from forks ([#6](https://github.com/claudiodekker/changelog-updater/pull/6))
-
+- Fix issue #9: Data loss with duplicate sections ([#10](https://github.com/claudiodekker/changelog-updater/pull/10)
 
 ## [v1.0.0](https://github.com/claudiodekker/changelog-updater/releases/tag/v1.0.0) - 2023-04-11
 
